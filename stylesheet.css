@@ -39,7 +39,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  width: 300px;
 }
 /* .button-input-container {
   display: flex;
@@ -71,7 +71,6 @@ form {
   color: black;
   font-weight: 700;
   float: right;
-  margin-left: 175px;
 }
 
 .x-button:hover {
@@ -83,10 +82,6 @@ form {
   color: black;
   list-style: none;
   padding-left: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
   width: 250px;
 }
 

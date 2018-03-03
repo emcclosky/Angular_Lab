@@ -7,25 +7,15 @@
     <link href="stylesheet.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
-  <body ng-controller="FormController as form">
-  <div class="container">
-    <h1>TODO List</h1>
-    <div class="inner-container">
-        <input type="text" ng-model="form.search" class="inputs" placeholder=" Search List items"/>
-      <ul class="list-styles">
-        <li ng-repeat = 'item in form.items | filter: form.search track by $index'>
-          <span>{{$index +1}}. {{item}}</span> <span ng-click='form.remove($index)' class='x-button'>X</span>
-        </li>
-      </ul>
-      <form ng-submit='form.addItem()'>
-        <input type='text' ng-model='form.newItem' class="inputs" placeholder=" Add new list item"/>
-        <button class="add-button">Add</button>
-      </form>
-    </div>
-  </div>
+  <body>
+    <task-form></task-form>
 
     <script src =https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js></script>
     <script src="index.js"></script>
-    <script src="form-controller.js"></script>
+    <script src="task-form/task-form-controller.js"></script>
+    <script src="task-form/task-form.js"></script>
+    <script src="task-list/task-list-controller.js"></script>
+    <script src="task-list/task-list.js"></script>
+
   </body>
 </html>

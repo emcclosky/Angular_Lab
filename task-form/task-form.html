@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Pirate TODO List</h1>
+  <div class="inner-container">
+    <input type="text" ng-model="$ctrl.search" class="inputs" placeholder=" Search List items"/>
+    <task-list to-dos="$ctrl.toDos"></task-list>
+    <form ng-submit='$ctrl.addtoDos()'>
+    <input type='text' ng-model='$ctrl.newItem' class="inputs" placeholder=" Add new list item"/>
+    <button class="add-button">Add</button>
+    </form>
+  </div>
+</div>

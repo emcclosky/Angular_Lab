@@ -1,0 +1,5 @@
+<ul class="list-styles">
+  <li ng-repeat = 'item in $ctrl.toDos | filter: $ctrl.search track by $index'>
+    <span>{{$index +1}}. {{item}}</span> <span ng-click='$ctrl.remove($index)' class='x-button'>X</span>
+  </li>
+</ul>
