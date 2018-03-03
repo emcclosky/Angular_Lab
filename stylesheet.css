@@ -1,5 +1,8 @@
 body {
-  background-color: #EDFFD9;
+  background: #00b09b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .container {
@@ -7,7 +10,7 @@ body {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: #f45f42;
+  background-color: white;
   max-width: 320px;
   min-height: 400px;
   border-radius: 4px;
@@ -18,34 +21,45 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   padding-top: 5px;
-  color: white;
+  color: #00b09b;
 }
 
 .inner-container {
-  margin: 0 auto;
-  padding: 0px 20px 20px 20px;
+  /* margin: 0 auto; */
+  /* padding: 0px 20px 20px 20px; */
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
-.button-input-container {
+
+form {
   display: flex;
-  flex-direction:row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
+/* .button-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+} */
 
 .add-button {
-  background-color: #ffac1e;
+  background-color: #A8EB12;
   style: none;
   border: none;
   border-radius: 4px;
   color: white;
   font-family: 'Open Sans', sans-serif;
-  width: 45px;
-  height: 28px;
-  margin-left: 4px;
+  width: 250px;
+  height: 35px;
+  margin-top: 7px;
+  /* margin-left: 4px; */
 }
 
 .add-button:hover {
@@ -53,10 +67,11 @@ h1 {
 }
 
 .x-button {
-  padding-left: 15px;
-  color: white;
+  /* padding-left: 15px; */
+  color: black;
   font-weight: 700;
-  padding-left: 25px;
+  float: right;
+  margin-left: 175px;
 }
 
 .x-button:hover {
@@ -65,14 +80,19 @@ h1 {
 
 .list-styles {
   font-family: 'Open Sans', sans-serif;
-  color: white;
-
+  color: black;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 250px;
 }
 
 .inputs {
   border-radius: 2px;
   height: 30px;
-  border: none;
-  border-bottom: 1px solid #bcbcba;
-  width: 200px;
+  border: 1px solid #bcbcba;
+  width: 250px;
 }

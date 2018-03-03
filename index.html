@@ -9,21 +9,18 @@
   </head>
   <body ng-controller="FormController as form">
   <div class="container">
-    <h1>To Do Thine List</h1>
+    <h1>TODO List</h1>
     <div class="inner-container">
-      <span>
-        <form ng-submit='form.addItem()'>
-          <input type='text' ng-model='form.newItem' class="inputs" placeholder=" Add new list item"/>
-          <button class="add-button">Add</button>
-        </form>
-      </span>
-      <ol class="list-styles">
+        <input type="text" ng-model="form.search" class="inputs" placeholder=" Search List items"/>
+      <ul class="list-styles">
         <li ng-repeat = 'item in form.items | filter: form.search track by $index'>
-          <span>{{item}}</span> <span ng-click='form.remove(item)' class='x-button'>X</span>
+          <span>{{$index +1}}. {{item}}</span> <span ng-click='form.remove($index)' class='x-button'>X</span>
         </li>
-      </ol>
-        </br>
-      <input type="text" ng-model="form.search" class="inputs" placeholder=" Search List items"/>
+      </ul>
+      <form ng-submit='form.addItem()'>
+        <input type='text' ng-model='form.newItem' class="inputs" placeholder=" Add new list item"/>
+        <button class="add-button">Add</button>
+      </form>
     </div>
   </div>
 
