@@ -5,6 +5,40 @@ background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, F
 
 }
 
+
+.welcome-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 550px;
+  max-height: 350px;
+  margin-top: 20%;
+}
+
+.inner-container{
+  margin: 8px 8px 8px 8px;
+}
+
+.welcome-header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  padding-top: 5px;
+  color: #00b09b;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.enter-button{
+  color: #00b09b;
+  opacity: .7;
+  float: right;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .container {
   margin: 0 auto;
   margin-top: 50px;
@@ -88,6 +122,15 @@ form {
 .inputs {
   border-radius: 2px;
   height: 30px;
-  border: 1px solid #bcbcba;
+  border: none;
+  border-bottom: 2px solid #f2f2f2;
   width: 250px;
+}
+
+.back-button{
+  color: #00b09b;
+  opacity: .7;
+  float: right;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
